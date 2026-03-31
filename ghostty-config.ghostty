@@ -1,0 +1,39 @@
+# ================================
+# Ghostty config - Blue Unified 配色
+# 与 Zellij blue-unified 主题统一
+# ================================
+
+# 字体
+font-family = "JetBrainsMono Nerd Font"
+font-size = 14
+
+# 基础主题
+theme = "Dracula"
+
+# 覆盖颜色 - 匹配 Zellij 背景 rgb(22,30,46)
+background = "#161e2e"
+foreground = "#c0d5e8"
+
+# 选中色 - 匹配 Zellij 亮蓝 rgb(80,195,255)
+selection-background = "#50c3ff"
+selection-foreground = "#161e2e"
+
+# 背景透明度
+background-opacity = 0.96
+
+# 窗口内边距
+window-padding-x = 10
+window-padding-y = 8
+
+# 光标样式
+cursor-style = block
+
+# 滚动历史
+scrollback-limit = 100000
+
+# 选中自动复制
+copy-on-select = clipboard
+selection-clear-on-typing = true
+selection-clear-on-copy = false
+
+working-directory = home

@@ -1,51 +1,50 @@
-# Blue Unified - Zellij Theme
+# Blue Unified - Terminal Theme
 
-A bright blue dark theme for [Zellij](https://zellij.dev/) terminal multiplexer (v0.44+).
-
-## Preview
-
-- Deep navy background (`22, 30, 46`)
-- Bright blue accents (`80, 195, 255`)
-- Blue highlighted borders (`0, 85, 165`)
-- Clean white/black ribbon contrast
-- Full coverage of all 15 theme color groups
+A bright blue dark theme for [Zellij](https://zellij.dev/) and [Ghostty](https://ghostty.org/), colors unified across both tools.
 
 ## Color Palette
 
-| Role | Color |
-|------|-------|
-| Background | `rgb(22, 30, 46)` |
-| Bright Blue (accent) | `rgb(80, 195, 255)` |
-| Medium Blue (borders) | `rgb(0, 85, 165)` |
-| Muted Blue (text) | `rgb(140, 170, 200)` |
-| Success | `rgb(80, 200, 160)` |
-| Error | `rgb(230, 100, 100)` |
+| Role | Color | Contrast |
+|------|-------|----------|
+| Background | `#161e2e` `rgb(22, 30, 46)` | - |
+| Foreground (text) | `#c0d5e8` `rgb(192, 213, 232)` | 11.1:1 (AAA) |
+| Bright Blue (accent) | `#50c3ff` `rgb(80, 195, 255)` | - |
+| Medium Blue (borders) | `#0055a5` `rgb(0, 85, 165)` | - |
+| Selection | `#50c3ff` on `#161e2e` | - |
+| Success | `rgb(80, 200, 160)` | - |
+| Error | `rgb(230, 100, 100)` | - |
 
-## Installation
+## Zellij Theme
 
-Copy the theme block from `blue-unified.kdl` into your `~/.config/zellij/config.kdl`:
+Copy the theme from `blue-unified.kdl` into `~/.config/zellij/config.kdl`:
 
 ```kdl
-// Add inside your config.kdl
 themes {
-    // ... paste theme content here
+    // ... paste content from blue-unified.kdl
 }
 
 theme "blue-unified"
 ```
 
-Or copy the file to your Zellij themes directory:
+Or copy to themes directory:
 
 ```bash
 mkdir -p ~/.config/zellij/themes
 cp blue-unified.kdl ~/.config/zellij/themes/
 ```
 
-Then set in `config.kdl`:
+Requires Zellij 0.44+. Full coverage of all 15 theme color groups.
 
-```kdl
-theme "blue-unified"
+## Ghostty Config
+
+Copy `ghostty-config.ghostty` to your Ghostty config location:
+
+```bash
+# macOS
+cp ghostty-config.ghostty ~/Library/Application\ Support/com.mitchellh.ghostty/config
 ```
+
+Uses Dracula as base theme with color overrides to match Zellij.
 
 ## License
 
